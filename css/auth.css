@@ -1,0 +1,94 @@
+/* auth.css */
+
+.auth-container {
+  background: rgba(239, 238, 238, 0.5);
+  padding: 2rem 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  border: 1px solid white;
+}
+
+.auth-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+.auth-container input,
+.auth-container select,
+.auth-container textarea {
+  background: rgba(94, 93, 93, 0.2);
+  width: 95%;
+  margin-bottom: 12px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid darkgray;
+  font-size: 18px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  transition: border-color 0.3s ease;
+}
+input::placeholder{
+  color: #4e4d4d;
+}
+
+textarea::placeholder{
+  color: #4e4d4d;
+}
+.auth-container select{
+  width:97%
+}
+
+.auth-container button {
+  background-color: #d291bc;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.auth-container button:hover {
+  background-color: #9895dc;
+}
+
+.auth-container p {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.auth-container a {
+  color: #6c63ff;
+  text-decoration: none;
+}
+
+.auth-container a:hover {
+  text-decoration: underline;
+}
+
+#trainerFields input,
+#trainerFields select,
+#trainerFields textarea {
+  width: 100%;
+}
+
+@media (width <= 400px){
+  .auth-container{
+    width: 350px;
+  }
+  .auth-container select{
+    font-size: 14px;
+  }
+  
+}
